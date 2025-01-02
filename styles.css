@@ -46,9 +46,13 @@
   https://www.joshwcomeau.com/css/custom-css-reset/
 */
 
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 .container {
     display: grid;
-    grid: minmax(90px, 1fr) 5fr / minmax(125px, 1fr) 5fr;
+    grid: minmax(90px, 1fr) 5fr / minmax(175px, 1fr) 5fr;
     height: 100vh;
     padding: 5px;
 }
@@ -56,6 +60,105 @@
 .sidebar {
     background-color: rgb(25 146 212);
     grid-row: 1 / -1;
+    color: white;
+    padding: 1rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.sidebar-item:hover {
+    background-color: hsl(201, 79%, 60%);
+    border-radius: 5px;
+}
+
+.sidebar-main-items, .sidebar-secondary-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+.dashboard-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon {
+    background-color: white;
+    mask-size: 100%;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.dashboard-icon {
+    -webkit-mask: url("./img/view-dashboard.svg") no-repeat center;
+    mask: url("./img/view-dashboard.svg") no-repeat center;
+    width: 2rem;
+    height: 2rem;
+}
+
+.home-icon {
+    -webkit-mask: url("./img/home.svg") no-repeat center;
+    mask: url("./img/home.svg") no-repeat center;
+}
+
+.profile-icon {
+    -webkit-mask: url("./img/card-account-details-outline.svg") no-repeat center;
+    mask: url("./img/card-account-details-outline.svg") no-repeat center;
+}
+
+.messages-icon {
+    -webkit-mask: url("./img/message-reply.svg") no-repeat center;
+    mask: url("./img/message-reply.svg") no-repeat center;
+}
+
+.history-icon {
+    -webkit-mask: url("./img/clock-time-three.svg") no-repeat center;
+    mask: url("./img/clock-time-three.svg") no-repeat center;
+}
+
+.tasks-icon {
+    -webkit-mask: url("./img/file-multiple-outline.svg") no-repeat center;
+    mask: url("./img/file-multiple-outline.svg") no-repeat center;
+}
+
+.communities-icon {
+    -webkit-mask: url("./img/account-group.svg") no-repeat center;
+    mask: url("./img/account-group.svg") no-repeat center;
+}
+.settings-icon {
+    -webkit-mask: url("./img/cog.svg") no-repeat center;
+    mask: url("./img/cog.svg") no-repeat center;
+}
+
+.support-icon {
+    -webkit-mask: url("./img/help-box-outline.svg") no-repeat center;
+    mask: url("./img/help-box-outline.svg") no-repeat center;
+}
+
+.privacy-icon {
+    -webkit-mask: url("./img/shield-account.svg") no-repeat center;
+    mask: url("./img/shield-account.svg") no-repeat center;
 }
 
 .header {
