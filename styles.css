@@ -168,3 +168,12 @@ body {
 .main-content {
     background-color: rgb(226 232 240);
 }
+
+.header {
+    display: grid;
+    grid: 1fr 1fr / 5fr 3fr;
+}
+
+.header > * {
+    border: 1px solid black;
+}
