@@ -103,62 +103,29 @@ body {
     gap: 1rem;
 }
 
-.icon {
-    background-color: white;
-    mask-size: 100%;
-    width: 1.2rem;
-    height: 1.2rem;
-}
-
 .dashboard-icon {
-    -webkit-mask: url("./img/view-dashboard.svg") no-repeat center;
-    mask: url("./img/view-dashboard.svg") no-repeat center;
+    /* -webkit-mask: url("./img/view-dashboard.svg") no-repeat center;
+    mask: url("./img/view-dashboard.svg") no-repeat center; */
+    background-image: url("./img/view-dashboard.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 2rem;
     height: 2rem;
 }
 
-.home-icon {
-    -webkit-mask: url("./img/home.svg") no-repeat center;
-    mask: url("./img/home.svg") no-repeat center;
+.sidebar img {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
 }
 
-.profile-icon {
-    -webkit-mask: url("./img/card-account-details-outline.svg") no-repeat center;
-    mask: url("./img/card-account-details-outline.svg") no-repeat center;
+.dashboard-item img {
+    width: 2rem;
+    height: 2rem;
 }
 
-.messages-icon {
-    -webkit-mask: url("./img/message-reply.svg") no-repeat center;
-    mask: url("./img/message-reply.svg") no-repeat center;
-}
-
-.history-icon {
-    -webkit-mask: url("./img/clock-time-three.svg") no-repeat center;
-    mask: url("./img/clock-time-three.svg") no-repeat center;
-}
-
-.tasks-icon {
-    -webkit-mask: url("./img/file-multiple-outline.svg") no-repeat center;
-    mask: url("./img/file-multiple-outline.svg") no-repeat center;
-}
-
-.communities-icon {
-    -webkit-mask: url("./img/account-group.svg") no-repeat center;
-    mask: url("./img/account-group.svg") no-repeat center;
-}
-.settings-icon {
-    -webkit-mask: url("./img/cog.svg") no-repeat center;
-    mask: url("./img/cog.svg") no-repeat center;
-}
-
-.support-icon {
-    -webkit-mask: url("./img/help-box-outline.svg") no-repeat center;
-    mask: url("./img/help-box-outline.svg") no-repeat center;
-}
-
-.privacy-icon {
-    -webkit-mask: url("./img/shield-account.svg") no-repeat center;
-    mask: url("./img/shield-account.svg") no-repeat center;
+.sidebar-main-items img, .sidebar-secondary-items img {
+    width: 1.2rem;
+    height: 1.2rem;
 }
 
 .header {
