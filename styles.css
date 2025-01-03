@@ -232,3 +232,49 @@ body {
   cursor: pointer;
   background-color: hsl(201.18deg 78.9% 26.47%);
 }
+
+.main-content {
+  display: grid;
+  grid: 1fr / 2fr 1fr;
+}
+
+.your-projects {
+  display: grid;
+  grid: auto-flow 1fr / repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.project-card {
+  background-color: rgb(255 255 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  border-left: 0.5rem solid hsl(41.91deg 86.9% 55.1%);
+}
+
+.project-card-text-area {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.card-title {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.7rem;
+}
+
+.project-card-icons-area {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+}
+
+.project-card-icons-area img {
+  width: 1rem;
+}
